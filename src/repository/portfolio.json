@@ -1,26 +1,25 @@
-[
-   {
-      "image": "./assets/images/portfolio/img-1.jpg",
-      "resource": "javascript:;"
-   },
-   {
-      "image": "./assets/images/portfolio/img-2.png",
-      "resource": "javascript:;"
-   },
-   {
-      "image": "./assets/images/portfolio/img-3.jpg",
-      "resource": "javascript:;"
-   },
-   {
-      "image": "./assets/images/portfolio/img-4.png",
-      "resource": "javascript:;"
-   },
-   {
-      "image": "./assets/images/portfolio/img-5.jpg",
-      "resource": "javascript:;"
-   },
-   {
-      "image": "./assets/images/portfolio/img-6.jpg",
-      "resource": "javascript:;"
-   }
+[{
+        "image": "./assets/images/portfolio/img-1.jpg",
+        "resource": "https://project-app-landing.netlify.app/"
+    },
+    {
+        "image": "./assets/images/portfolio/img-2.png",
+        "resource": "https://header-with-lamp.netlify.app/"
+    },
+    {
+        "image": "./assets/images/portfolio/img-3.jpg",
+        "resource": "javascript:;"
+    },
+    {
+        "image": "./assets/images/portfolio/img-4.png",
+        "resource": "javascript:;"
+    },
+    {
+        "image": "./assets/images/portfolio/img-5.jpg",
+        "resource": "javascript:;"
+    },
+    {
+        "image": "./assets/images/portfolio/img-6.jpg",
+        "resource": "javascript:;"
+    }
 ]
