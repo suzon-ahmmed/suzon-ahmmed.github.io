@@ -31,6 +31,29 @@ Table Of Contents
     transition: all .4s ease-in-out;
 }
 
+html::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #4b5966;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #b07462;
+    /* height: 50%!important; */
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #f5865d;
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: #afafaf;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url(../images/bg-paterns.png);
