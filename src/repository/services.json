@@ -1,32 +1,31 @@
-[
-   {
-      "icon": "fa-pencil-ruler",
-      "title": "Creative Design",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   },
-   {
-      "icon": "fas fa-code",
-      "title": "Clean Code",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   },
-   {
-      "icon": "fas fa-tachometer-alt",
-      "title": "Fast Support",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   },
-   {
-      "icon": "fas fa-laptop",
-      "title": "User Interface",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   },
-   {
-      "icon": "fas fa-briefcase",
-      "title": "User Experience",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   },
-   {
-      "icon": "fas fa-plus",
-      "title": "Others Content",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
-   }
+[{
+        "icon": "fas fa-pencil-ruler",
+        "title": "Creative Design",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    },
+    {
+        "icon": "fas fa-code",
+        "title": "Clean Code",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    },
+    {
+        "icon": "fas fa-tachometer-alt",
+        "title": "Fast Support",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    },
+    {
+        "icon": "fas fa-laptop",
+        "title": "User Interface",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    },
+    {
+        "icon": "fas fa-briefcase",
+        "title": "User Experience",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    },
+    {
+        "icon": "fas fa-plus",
+        "title": "Others Content",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm."
+    }
 ]
