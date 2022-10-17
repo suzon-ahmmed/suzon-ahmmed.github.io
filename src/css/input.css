@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 22px #4b688123;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 55px #71879c7c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../images/bg-paterns.png);
+  @apply antialiased bg-cover text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0a192f];
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+section {
+  @apply mt-5 mb-5 px-2 xl:px-0 sm:mt-10  sm:mb-10  first:mt-0 first:mb-0;
+}
+main {
+}
+.header {
+  transition: 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
+  @apply py-6 bg-transparent;
+}
+.header--scrolling {
+  @apply py-1 md:py-2 border-b-2 border-[#0000001c] bg-primary-header  shadow;
+}
+@layer components {
+  .btn-primary {
+    @apply cursor-pointer focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium bg-transparent border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-500 dark:hover:shadow-blue-600 rounded-md
+      duration-[1000ms,1000ms] transition-[color,box-shadow] hover:border-gray-50;
+  }
+  .btn-secondary {
+    @apply py-1.5 px-3 font-medium rounded-md hover:text-white border relative overflow-hidden focus:ring-2 focus:ring-violet-300 after:content-[''] after:absolute after:top-0 after:-right-4 after:w-[0%] after:h-full after:bg-violet-600 dark:after:bg-primary-header after:-z-[1] after:transition-[width] after:duration-500 after:ease-in-out after:origin-right after:-skew-x-[30deg] hover:overflow-hidden hover:transition-all hover:after:w-[130%] hover:after:-left-3 hover:after:origin-left;
+  }
+
+  .active-link {
+    @apply font-semibold border-b-2 text-slate-50 transition-[border] duration-500;
+  }
+  .header a {
+    @apply hover:border-b-2 hover:duration-300 transition-[border];
+  }
+  .hero {
+    @apply bg-gradient-to-b from-[#7a19f1] to-[#4026a8] text-white relative;
+  }
+  .hero::before {
+    background-image: url("../images/hero-after-2.svg"),
+      url("../images/hero-after.svg");
+    background-position: left top, right top;
+    @apply h-[210px] md:h-[330px] absolute right-0 left-0 bottom-0 content-[''] opacity-30 z-[1] bg-cover;
+  }
+  .hero-content {
+    @apply container relative pt-[140px] pb-[110px] sm:pt-[240px] sm:pb-[190px];
+  }
+  .heading-title {
+    @apply text-2xl flex items-center mb-4 sm:mb-8 sm:text-3xl font-medium text-slate-600 dark:text-slate-200  after:content-[''] after:relative after:block after:w-[40%] sm:after:w-[50%] after:h-[1px] after:bg-[#233554] after:ml-4 after:mt-3;
+  }
+}

@@ -8,249 +8,317 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="Suzon Ahmmed">
+    <link rel="icon" href="./src/images/logo.svg">
 
     <title>Suzon Ahmmed -Portfolio</title>
 
-    <link rel="icon" href="images/sa.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img class="my-logo" src="./assets/images/sapng.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-			</button>
-            <div class="collapse  navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav hover-s ms-auto" id="renderNavbar">
+
+    <header
+        class="fixed -top-1 sm:top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50  text-white supports-backdrop-blur:bg-white/60 dark:bg-transparent header">
+
+        <nav class="container flex flex-wrap justify-between items-center px-2 xl:px-0">
+            <a href="javascripr:;" class="flex items-center hover:border-none text-white">
+                <img src="./src/images/logo.svg" class="mr-1 h-8" alt="SA. Logo">
+                <!-- <i class="fa-solid fa-laptop-code text-2xl font-semibold mr-2"></i> -->
+                <span class="self-center text-xl -mt-[2px] font-bold">SA.</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 text-lg  rounded-lg md:hidden hover:bg-gray-800/10 dark:text-gray-400 dark:hover:bg-gray-700 my-2"
+                aria-controls="navbar-default" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="hidden mt-4 sm:mt-0 w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col text-center justify-center rounded-lg border border-gray-100 md:flex-row md:items-center md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 space-y-4 md:space-y-0 py-4 md:py-0 space-x-0">
+                    <li>
+                        <a href="#about" class="active-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#service" class="">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="">Contact</a>
+                    </li>
+                    <li>
+                        <button id="theme-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-800/10 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 -">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                                    class="fill-sky-400/20"></path>
+                                <path
+                                    d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                                    class="fill-gray-200"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                                    class="fill-gray-200"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" viewBox="0 0 24 24" fill="none" class="hidden w-6 h-6"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-slate-200">
+                                </path>
+                                <path
+                                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                                    class="stroke-slate-200"></path>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <div x-data="scrollProgress()" x-init="init()" x-cloak class="fixed inset-x-0 top-0 z-50">
+        <div class="h-[3px] bg-slate-200" :style="`width: ${percent}%`"></div>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container h-full -mt-8 flex flex-col justify-center items-center relative z-20">
+                    <div class="font-bold text-3xl sm:text-5xl md:text-6xl">Front-End Developer</div>
+                    <div class="md:text-lg sm:text-base text-sm mt-4 text-center md:w-[540px] sm:w-[440px] w-[330px]">
+                        Specializing in custom theme development. If
+                        you're a business seeking a web presence or are
+                        looking to hire, contact me <a href="#" class="border-b border-dotted">here.</a>
+                    </div>
+                    <a href="javascript:;"
+                        class="mt-4 btn-secondary after:bg-white/10 dark:after:bg-white/10 hover:text-white dark:border-white">View
+                        Portfolio</a>
+                    <!-- <button class="btn-secondary mt-4">View Portfolio</button> -->
+                </div>
+            </div>
+            <div class="w-full h-[330px] absolute z-10 bottom-0 right-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0" viewBox="0 0 1440 280"
+                    class='hero-bottom'>
+                    <path class="fill-white dark:fill-[#0a192f]" fill-opacity="1"
+                        d="M0,192L120,202.7C240,213,480,235,720,234.7C960,235,1200,213,1320,202.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
 
-
-    <section class="home" id="home">
-        <div id="particles-js"></div>
-        <div class="overlay">
-            <div class="container">
-                <div class="intro display-table">
-                    <div class="display-table-cell">
-                        <h1>Hi, I’m Suzon</h1>
-                        <h3><span>Web Designer</span><span>Web Developer</span></h3>
-                        <div class="my-btn">
-                            <a href="#" class="main-btn">Hire Me</a>
-                        </div>
+        <section class="container section mt-0" id="about">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="heading-title">About Me</h3>
+                    <div>
+                        Hello, My name is Suzon Ahmmed. I am a Front-End Developer. I enjoy creating things that live on the internet. I design and develop websites and web applications using HTML, CSS and JavaScript. 
                     </div>
                 </div>
-                <div class="divider">
-                    <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920px" height="322.61px" viewBox="0 0 1920 322.61" enable-background="new 0 0 1920 322.61" xml:space="preserve">
-						<path opacity="0.5" fill="#36353b" d="M1920,0.125c-119.022-1.873-267.412,16.756-405.666,93.152
-                            C1217.826,257.123,1036.001,280.94,802.595,239.68s-268.61-60.067-530.169,3.501C161.642,270.105,69.463,273.733,0,268.972v53.639
-                            h1920V0.125z" />
-						<path class="my-wave" opacity="0.6" d="M1920,41.35c-111.979-14.35-253.634-4.298-401.009,78.27
-                            C1186.982,305.628,981,284.61,781.744,247.61s-216.231-44.568-477.79,19C183.522,295.88,78.391,296.893,0,289.466v33.145h1920V41.35
-                            z" />
-						<path fill="#2c2a2f" d="M1920,55.904c-99.143-1.178-229.965,20.125-392.831,92.893
-                            c-419.874,187.597-610.347,138.584-745.425,111.032s-204.133-34.643-465.692,28.926C192.241,318.846,81.893,318.814,0,310.438
-                            v12.173h1920V55.904z" />
-					</svg>
+                <div class="flex items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore
+                    a animi
+                    rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
+                    Esse,
+                    vero?
                 </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- ========== End Home ========== -->
+        </section>
+        </section>
+        <section class="container section" id="service">
+            <h3 class="text-2xl">Services</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
 
-    <!-- ========== Start About Me ========== -->
-
-    <section class="about-me" id="about">
-        <div class="container">
-            <div class="main-title">
-                <h2>About Me
-                    <span class="holder"></span>
-                    <span> 01.</span>
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-image">
-                        <img class="img-responsive my-img" src="./assets/images/DSC_0868-01.jpeg" alt="">
-                    </div>
+        </section>
+        <section class="container section" id="portfolio">
+            <!-- <div class="relative">
+                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400">
+                    <h2 class="text-4xl">The First Title</h2>
+                    <p>Scroll Down</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="about-info">
-                        <h3>I am Suzon Ahmmed, I'm a passionate web designer & developer with 3 Years of Experience.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi sed do eiusm tempor incididunt ut
-                            labore et dolore magna.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="personal-info">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p>Name: <span>Suzon Ahmmed <br>B.sc Engineer (CSE)</span></p>
-
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <p>Age: <span>23</span></p>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <p>Phone: <span>+880 01640-096826</span></p>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <p>Address: <span>Rajshahi, Bangladesh</span></p>
-                                </div>
-
-                            </div>
-                            <span class="info-bg"><i class="fa fa-address-card"></i></span>
-                        </div>
-                        <a href="#" class="main-btn">Download CV</a>
-                    </div>
+                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-600 text-white">
+                    <h2 class="text-4xl">The Second Title</h2>
+                    <p>Scroll Down</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== End About Me ========== -->
-
-
-    <!-- Skills Content | Start -->
-    <section class="skills" id="skills">
-        <div class="container-lg">
-            <div class="main-title">
-                <h2>My Skills<span class="holder"></span><span> 02.</span></h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="skills-content">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h3><i class="fas fa-id-card-alt"></i> Personal Skills</h3>
-                                <div class="personal-skills" id="renderPersonalSkills">
-                                    <!-- content appear here... -->
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <h3><i class="fa fa-tasks"></i> Professional Skills</h3>
-                                <div class="professional-skills" id="renderProfessionalSkills">
-                                    <!-- content appear here.. -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white">
+                    <h2 class="text-4xl">The Third Title</h2>
+                    <p>Scroll Down</p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Content | End -->
-
-    <!-- Portfolio Content | Start -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="main-title">
-                <h2>My Portfolio<span class="holder"></span><span> 03.</span></h2>
-            </div>
-            <div class="filter-menu">
-                <h3>Web Design & Development</h3>
-            </div>
-            <div class="portfolio-content justify-content-center">
-                <div class="row photos" id="renderProtfolio">
-                    <!-- content appear here.. -->
+                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-neutral-800 text-white">
+                    <h2 class="text-4xl">The Fourth Title</h2>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Content | End -->
+            </div> -->
 
-    <!-- Service Content | Start -->
-    <section class="services" id="services">
-        <div class="container ">
-            <div class="main-title">
-                <h2>My Services<span class="holder"></span><span> 04.</span></h2>
-            </div>
-            <div class="row" id="renderService">
-                <!-- content appear here.. -->
-            </div>
-        </div>
-    </section>
-    <!-- Service Content | End -->
+        </section>
+        <section class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
 
-    <!-- Contact Content | Start -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="main-title">
-                <h2>Contact Me<span class="holder"></span><span> 05.</span></h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row" id="renderContact">
-                        <!-- content appear here... -->
-                    </div>
-                </div>
-                <div class="col-lg-10 col-lg-offset-1">
-                    <form class="contact-form" action="#" method="post">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button Send Message  -->
-                        <button class="main-btn" type="submit" name="send">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Content | End -->
+        </section>
+        <section class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a animi
+            rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti? Esse,
+            vero?
 
-    <!-- Footer Content | Start -->
-    <footer class="footer text-center">
-        <div class="container">
-            <a class="logo" href="#">
-                <img class="my-logo-f" src="./assets/images/sapng.png" alt="">
-            </a>
-            <ul class="footer-social-icons list-unstyled" id="renderSocial">
-                <!-- content appear here... -->
-            </ul>
-            <div class="copyright">
-                <p>All Right Reserved &copy; 2021 <a href="#" target="_blank">Suzon Ahmmed</a></p>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Content | End -->
+        </section>
+        <section class="container section" id="contact">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        </section>
+        <section class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./assets/js/jquery.countTo.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
-    <script src="./src/app.js"></script>
+        </section>
+        <section class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
+
+        </section>
+        <section class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
+
+        </section>
+        <section class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
+
+        </section>
+        <section class="container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum culpa repudiandae laudantium voluptas
+            alias est, earum nulla quam asperiores blanditiis qui aut velit aperiam aliquam quae quasi. Rem cum ea sed
+            vitae dolorem. Sit blanditiis autem ducimus fugiat reprehenderit! Repellat iste ducimus non ab, voluptatibus
+            provident porro, distinctio fuga cupiditate fugit amet tempore doloribus, eius laudantium consequuntur?
+            Ullam quae qui, ab voluptates repudiandae fugiat atque quibusdam pariatur unde praesentium dolore veritatis
+            a corporis. Nobis nostrum at consequatur mollitia. Commodi quae numquam tenetur. Molestias in fugiat aliquam
+            quis illum laudantium quidem natus porro excepturi aspernatur praesentium nihil similique, veniam
+            dignissimos magni corporis facere dolor sequi? Minima repellat expedita repudiandae commodi, voluptate
+            veritatis ut consequuntur eius. Dolorem ducimus doloribus voluptates ut! Accusantium velit, est recusandae
+            error magnam corporis in? Aspernatur esse earum quam eaque repudiandae dolore velit consequatur fugiat ipsam
+            quos, numquam repellendus facere nostrum praesentium facilis? Rem quo quia odio animi ex. Quia, doloremque
+            molestiae aspernatur nobis cumque dignissimos sunt voluptate dolor odit amet ea quidem tempora aliquam
+            laborum non dolore a error ex rerum quos aliquid inventore consequuntur sequi. Consectetur est, reiciendis
+            nulla distinctio praesentium rem quia, maiores amet nesciunt inventore adipisci necessitatibus officia
+            ratione facilis, magnam neque quidem!
+
+        </section>
+
+        <!-- Circle -->
+        <!-- <div x-data="scrollProgress()" x-init="init()" x-cloak
+            class="fixed inline-flex items-center justify-center overflow-hidden rounded-full bottom-5 right-5 z-30">
+            <svg class="w-20 h-20 transform -rotate-90">
+                <circle class="text-gray-300" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40"
+                    cy="40" />
+                <circle class="text-sky-500" stroke-width="5" :stroke-dasharray="circumference"
+                    :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round"
+                    stroke="currentColor" fill="transparent" r="30" cx="40" cy="40" />
+            </svg>
+            <span class="absolute text-xl text-sky-500" x-text="`${percent}%`"></span>
+        </div> -->
+    </main>
+
+
+
+
+    <script src="./src/js/color.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
+    <script src="./node_modules//flowbite/dist/flowbite.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
 
 </html>

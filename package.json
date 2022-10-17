@@ -1,0 +1,25 @@
+{
+  "name": "suzon-ahmmed.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzon-ahmmed/suzon-ahmmed.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suzon-ahmmed/suzon-ahmmed.github.io/issues"
+  },
+  "homepage": "https://github.com/suzon-ahmmed/suzon-ahmmed.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.3"
+  }
+}

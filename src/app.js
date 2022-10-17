@@ -141,14 +141,14 @@ $(document).ready(function () {
 	Contact();
 
 	
-	$("img").mousedown(function () {
-		return false;
-	});
+	// $("img").mousedown(function () {
+	// 	return false;
+	// });
 
 
-	$(document).on('contextmenu', function (e) {
-		return false;
-	});
+	// $(document).on('contextmenu', function (e) {
+	// 	return false;
+	// });
 
 
 	$(document).keydown(function (event) {
