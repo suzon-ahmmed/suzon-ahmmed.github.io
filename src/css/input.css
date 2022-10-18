@@ -36,10 +36,9 @@ body {
   }
 }
 section {
-  @apply mt-5 mb-5 px-2 xl:px-0 sm:mt-10  sm:mb-10  first:mt-0 first:mb-0;
+  @apply mt-6 mb-6 px-2 xl:px-0 sm:mt-10  sm:mb-10 md:my-14 lg:my-16  first:mt-0 first:mb-0;
 }
-main {
-}
+
 .header {
   transition: 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
   @apply py-6 bg-transparent;
@@ -49,12 +48,12 @@ main {
 }
 @layer components {
   .btn-primary {
-    @apply cursor-pointer focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium bg-transparent border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-500 dark:hover:shadow-blue-600 rounded-md
-      duration-[1000ms,1000ms] transition-[color,box-shadow] hover:border-gray-50;
+    @apply cursor-pointer focus:ring-4 bg-violet-200 dark:bg-white/10 focus:ring-violet-300 dark:focus:ring-violet-200 font-medium border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-violet-500 dark:hover:shadow-primary-header rounded-md  px-3 py-1.5 sm:px-4 sm:py-2 duration-[1000ms,1000ms] transition-[color,box-shadow] hover:border-gray-50;
   }
-  .btn-secondary {
-    @apply py-1.5 px-3 font-medium rounded-md hover:text-white border relative overflow-hidden focus:ring-2 focus:ring-violet-300 after:content-[''] after:absolute after:top-0 after:-right-4 after:w-[0%] after:h-full after:bg-violet-600 dark:after:bg-primary-header after:-z-[1] after:transition-[width] after:duration-500 after:ease-in-out after:origin-right after:-skew-x-[30deg] hover:overflow-hidden hover:transition-all hover:after:w-[130%] hover:after:-left-3 hover:after:origin-left;
-  }
+
+  /* .btn-secondary {
+    @apply py-1.5 px-3 font-medium rounded-md bg-violet-200 hover:text-white border relative overflow-hidden focus:ring-2 focus:ring-violet-300 after:content-[''] after:absolute after:top-0 after:-right-4 after:w-[0%] after:h-full after:bg-violet-600 dark:after:bg-primary-header after:-z-[1] after:transition-[width] after:duration-500 after:ease-in-out after:origin-right after:-skew-x-[30deg] hover:after:overflow-hidden hover:transition-all hover:after:w-[130%] hover:after:-left-3 hover:after:origin-left;
+  } */
 
   .active-link {
     @apply font-semibold border-b-2 text-slate-50 transition-[border] duration-500;
@@ -71,10 +70,44 @@ main {
     background-position: left top, right top;
     @apply h-[210px] md:h-[330px] absolute right-0 left-0 bottom-0 content-[''] opacity-30 z-[1] bg-cover;
   }
+  footer::before {
+    background-image: url("../images/hero-after-2.svg"),
+      url("../images/hero-after.svg");
+    background-position: left top, right top;
+    @apply h-[140px] md:h-[180px] absolute right-0 left-0 bottom-0 content-[''] opacity-30 z-[1] bg-cover;
+  }
   .hero-content {
     @apply container relative pt-[140px] pb-[110px] sm:pt-[240px] sm:pb-[190px];
   }
   .heading-title {
-    @apply text-2xl flex items-center mb-4 sm:mb-8 sm:text-3xl font-medium text-slate-600 dark:text-slate-200  after:content-[''] after:relative after:block after:w-[40%] sm:after:w-[50%] after:h-[1px] after:bg-[#233554] after:ml-4 after:mt-3;
+    @apply relative inline-block text-slate-600 dark:text-slate-200 font-medium text-2xl mb-4 sm:mb-6 pr-2;
+  }
+  .heading-title:before {
+    @apply content-[''] inline-block absolute top-5 -right-20 w-20 border-t-2 border-dotted border-slate-400;
+  }
+  .heading-title:after {
+    @apply content-[''] block absolute top-4 -right-[94px] h-2 w-2 rounded-full bg-primary-header ring-4 ring-slate-300 dark:ring-slate-600/70;
+  }
+
+  .p-image {
+    @apply relative mx-6 my-6 hover:after:top-0 hover:after:left-0 hover:after:transition-all duration-500;
+  }
+  .p-image::after {
+    @apply content-[''] absolute top-4 left-2 bg-primary-header/20 w-full -z-[1] rounded  h-full;
+  }
+  .p-image img {
+    @apply h-full saturate-[0.2] hover:saturate-[0.7] -ml-2 hover:-ml-0 hover:transition-all  duration-500;
+  }
+  .working-skills li {
+    @apply pl-6 relative before:content-[""] before:bg-beforeImg before:w-4 before:h-4 before:scale-75 before:absolute before:left-0 before:top-1 before:text-primary-header;
+  }
+  #contact form {
+    /* @apply bg-formImg bg-contain bg-top bg-no-repeat w-full bg-opacity-10; */
+    @apply relative;
+  }
+  #contact form input,
+  textarea {
+    @apply bg-transparent rounded-md text-sm sm:text-base placeholder-gray-500   border border-slate-600 w-full py-2 outline-none
+     focus:border-primary-header;
   }
 }
