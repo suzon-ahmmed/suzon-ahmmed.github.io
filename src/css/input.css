@@ -25,6 +25,31 @@ body {
   @apply antialiased bg-cover text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0a192f];
 }
 
+#preloader {
+  @apply w-screen h-screen bg-[#0a192f] fixed top-0 left-0 z-[999999];
+}
+#preloader .loading {
+  @apply flex justify-center items-center w-full h-full;
+}
+
+#preloader .loading svg path {
+  stroke-dasharray: 281;
+  -webkit-animation: dash 2.5s infinite linear forwards;
+}
+#preloader .loading svg {
+  @apply -ml-[90px] sm:ml-0 md:-mr-[50px] sm:-mr-[50px];
+}
+
+/*Animation*/
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1110px;

@@ -1806,6 +1806,59 @@ body {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+#preloader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+  height: 100vh;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 25 47 / var(--tw-bg-opacity));
+}
+
+#preloader .loading {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader .loading svg path {
+  stroke-dasharray: 281;
+  -webkit-animation: dash 2.5s infinite linear forwards;
+}
+
+#preloader .loading svg {
+  margin-left: -90px;
+}
+
+@media (min-width: 640px) {
+  #preloader .loading svg {
+    margin-left: 0px;
+    margin-right: -50px;
+  }
+}
+
+@media (min-width: 768px) {
+  #preloader .loading svg {
+    margin-right: -50px;
+  }
+}
+
+/*Animation*/
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1110px;

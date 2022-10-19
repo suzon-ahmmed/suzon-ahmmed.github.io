@@ -1,3 +1,36 @@
+/**
+ * Preloader anymation
+ *
+ * @param void
+ * @return void
+ */
+// auto preloader using jquery
+// $(document).ready(function(){
+// 	$('div#preloader').removeAttr('id');
+// });
+
+const preloader = document.getElementById("preloader");
+
+// auto preloader using venilla js
+window.addEventListener("load", function () {
+  preloader.style.display = "none";
+});
+
+//using onload fuction in body tag
+// function preloaderFunction() {
+//   // setTimeout(function(){
+//   //    preloader.style.display = 'none';
+//   // },50000)
+//   preloader.style.display = "none";
+// }
+
+/**
+ * sticky header
+ *
+ * @param void
+ * @return void
+ */
+
 function init_header_scrolling() {
   var header = $(".header");
   if ($(window).scrollTop() > 0) {

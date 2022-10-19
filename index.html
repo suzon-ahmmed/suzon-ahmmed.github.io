@@ -19,7 +19,15 @@
 </head>
 
 <body>
-
+    <div id="preloader">
+        <div class="loading">
+            <svg version="1.2" height="300" width="600" xmlns="http://www.w3.org/2000/svg" viewport="0 0 60 60"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path stroke="#741ce8" fill="none" stroke-width="2" stroke-linejoin="round"
+                    d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+            </svg>
+        </div>
+    </div>
     <header
         class="fixed -top-1 sm:top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50  text-white supports-backdrop-blur:bg-white/60 dark:bg-transparent header">
 
@@ -214,7 +222,8 @@
             <h3 class="heading-title">Contact</h3>
             <div>
                 <form action="#">
-                    <img src="./src/images/map-img.png" class="absolute top-0 left-0 -z-[1] h-full w-full opacity-50" alt="">
+                    <img src="./src/images/map-img.png" class="absolute top-0 left-0 -z-[1] h-full w-full opacity-50"
+                        alt="">
                     <div class="font-semibold text-3xl sm:text-5xl w-full text-center mb-4 sm:mb-12">Get in touch</div>
                     <div class="grid grid-cols-2 gap-4 sm:gap-8">
                         <input type="text" placeholder="Your Name" required>
