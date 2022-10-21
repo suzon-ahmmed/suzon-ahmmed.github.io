@@ -13,9 +13,12 @@
     <title>Suzon Ahmmed -Portfolio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
@@ -30,9 +33,8 @@
     </div>
     <header
         class="fixed -top-1 sm:top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50  text-white supports-backdrop-blur:bg-white/60 dark:bg-transparent header">
-
         <nav class="container flex flex-wrap justify-between items-center px-2 xl:px-0">
-            <a href="javascripr:;" class="flex items-center hover:border-none text-white">
+            <a href="#hero" class="flex items-center hover:border-none text-white">
                 <img src="./src/images/logo.svg" class="mr-1 h-8" alt="SA. Logo">
                 <!-- <i class="fa-solid fa-laptop-code text-2xl font-semibold mr-2"></i> -->
                 <span class="self-center text-xl -mt-[2px] font-bold">SA.</span>
@@ -46,16 +48,19 @@
                 <ul
                     class="flex flex-col text-center justify-center rounded-lg border border-gray-100 md:flex-row md:items-center md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 space-y-4 md:space-y-0 py-4 md:py-0 space-x-0">
                     <li>
-                        <a href="#about" class="active-link">About</a>
+                        <a href="#hero" class="active-link"></a>
                     </li>
                     <li>
-                        <a href="#service" class="">Services</a>
+                        <a href="#about" class=""><span>About</span></a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="">Portfolio</a>
+                        <a href="#service" class=""> <span>Services</span></a>
                     </li>
                     <li>
-                        <a href="#contact" class="">Contact</a>
+                        <a href="#portfolio" class=""><span>Portfolio</span></a>
+                    </li>
+                    <li>
+                        <a href="#contact" class=""><span>Contact</span></a>
                     </li>
                     <li>
                         <button id="theme-toggle" type="button"
@@ -90,14 +95,15 @@
         <div class="h-[3px] bg-slate-200" :style="`width: ${percent}%`"></div>
     </div>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
-                <div class="container h-full -mt-8 flex flex-col justify-center items-center relative z-20">
+                <div data-aos="fade-down"
+                    class="container h-full -mt-8 flex flex-col justify-center items-center relative z-20">
                     <div class="font-bold text-3xl sm:text-5xl md:text-6xl">Front-End Developer</div>
                     <div class="md:text-lg sm:text-base text-sm mt-4 text-center md:w-[540px] sm:w-[440px] w-[330px]">
                         Specializing in custom theme development. If
                         you're a business seeking a web presence or are
-                        looking to hire, contact me <a href="#" class="border-b border-dotted">here.</a>
+                        looking to hire, contact me <a href="#contact" class="border-b border-dotted">here.</a>
                     </div>
                     <a href="#portfolio"
                         class="mt-4 btn-primary dark:bg-transparent bg-transparent dark:border-gray-200">View
@@ -117,7 +123,7 @@
 
         <section class="container section mt-0" id="about">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+                <div data-aos="fade-right">
                     <h3 class="heading-title">About Me</h3>
                     <div class="mr-6 md:mr-8 space-y-4 sm:space-y-6">
                         <p>Hello, My name is Suzon Ahmmed. I am a Front-End Developer. I enjoy creating things that live
@@ -139,97 +145,211 @@
                             </ul>
                         </div>
                         <div>
-                            <a class="btn-primary" href="./src/repository/CV of  Suzon Ahmmed.pdf">View Resume</a>
+                            <a class="btn-primary" target="_blank" href="./src/repository/CV of  Suzon Ahmmed.pdf">View
+                                Resume</a>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center justify-center w-full">
-                    <div class="w-4/5 sm:w-3/5 md:w-4/5 lg:w-3/5 p-image">
-                        <img class="w-full rounded" src="./src/images/sa-1.jpg" alt="">
+                <div data-aos="fade-left" class="flex items-center justify-center w-full">
+                    <div class="w-4/5 sm:w-3/5 md:w-4/5 lg:w-3/5 p-image after-effect">
+                        <img class="w-full h-full rounded shadow-lg" src="./src/images/sa-1.jpg" alt="">
                     </div>
                 </div>
 
             </div>
+        </section>
 
-        </section>
-        </section>
         <section class="container section" id="service">
             <h3 class="heading-title">Services</h3>
-            <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, deserunt? Tenetur vel labore a
-                animi
-                rem architecto voluptatibus consectetur officia, ducimus amet ex magnam ab enim similique deleniti?
-                Esse,
-                vero?</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-6">
+                <div class="p-8 sm:p-12 md:p-5 flex justify-center">
+                    <div
+                        class="relative flex justify-center xl:h-[510px] lg:h-[500px] md:h-[420px] sm:h-[390px] h-[250px] xl:w-[510px] lg:w-[500px] md:w-[440px] sm:w-[420px] w-[300px]">
+                        <img data-aos="fade-down-left" data-aos-delay="500"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-3.png"
+                            alt="">
+                        <img data-aos="fade-down" data-aos-delay="300"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-2.png"
+                            alt="">
+                        <img data-aos="fade-up" class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]"
+                            src="./src/images/services-1.png" alt="">
+                        <img data-aos="fade-left" data-aos-delay="800"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-4.png"
+                            alt="">
+                        <img data-aos="fade-down" data-aos-delay="1000"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-5.png"
+                            alt="">
+                        <img data-aos="fade-down-left" data-aos-delay="1200"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-6.png"
+                            alt="">
+                        <img data-aos="fade-right" data-aos-delay="1400"
+                            class="absolute xl:h-[510px] lg:h-[480px] md:h-[440px]" src="./src/images/services-7.png"
+                            alt="">
+                    </div>
+                </div>
 
-
-        </section>
-        <section class="container section" id="portfolio">
-            <h3 class="heading-title">Portfolio</h3>
-            <div class="relative">
-                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-green-400">
-                    <h2 class="text-4xl">The First Title</h2>
-                    <p>Scroll Down</p>
-                </div>
-                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-600 text-white">
-                    <h2 class="text-4xl">The Second Title</h2>
-                    <p>Scroll Down</p>
-                </div>
-                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-purple-600 text-white">
-                    <h2 class="text-4xl">The Third Title</h2>
-                    <p>Scroll Down</p>
-                </div>
-                <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-neutral-800 text-white">
-                    <h2 class="text-4xl">The Fourth Title</h2>
+                <div class="pt-10 pb-4 px-4 flex flex-col justify-center items-center space-y-10 sm:pt-4">
+                    <div data-aos="flip-right" data-aos-delay="200" class="relative md:w-[80%] w-[100%]">
+                        <div
+                            class="border border-slate-100  dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center p-4 after-effect">
+                            <img class="w-[85px] h-[85px]" src="./src/images/service-icon-1.svg" alt="">
+                            <h3 class="text-2xl font-medium mb-2">Fast</h3>
+                            <p class="text-center">Website load time is very much important for every visitors. So fast
+                                load times and lag free interaction always my highest priority.</p>
+                        </div>
+                    </div>
+                    <div data-aos="flip-right" data-aos-delay="400" class="relative md:w-[80%] w-[100%]">
+                        <div
+                            class="border border-slate-100 dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center p-4 after-effect">
+                            <img class="w-[85px] h-[85px]" src="./src/images/service-icon-3.svg" alt="">
+                            <h3 class="text-2xl font-medium mb-2">Responsive</h3>
+                            <p class="text-center">Having a responsive layout means that your website fluidly resizes
+                                for optimal viewing regardless of the screen size or device. </p>
+                        </div>
+                    </div>
+                    <div data-aos="flip-right" data-aos-delay="600" class="relative md:w-[80%] w-[100%]">
+                        <div
+                            class="border border-slate-100 dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center p-4 after-effect">
+                            <img class="w-[85px] h-[85px]" src="./src/images/service-icon-2.svg" alt="">
+                            <h3 class="text-2xl font-medium mb-2">Dynamic</h3>
+                            <p class="text-center">Websites don't have to be static, I love making pages come to life.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </section>
+
+        <section class="container section" id="portfolio">
+            <div class="relative">
+                <div class="sticky top-14 sm:top-20">
+                    <h3 class="heading-title">Portfolio</h3>
+                </div>
+
+                <div
+                    class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col-reverse lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+                    <div class="lg:w-1/2 md:w-4/5 w-[90%] space-y-4 flex flex-col  items-center lg:items-start">
+                        <p class="text-slate-600 dark:text-slate-200 font-medium text-2xl">Weather App</p>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odit.
+                        </p>
+                        <ul class="flex flex-wrap space-x-4 working-skills">
+                            <li>React</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <div class="space-x-4">
+                            <a class="btn-primary" href="javascript:;">View Project</a>
+                            <a href="javascript:;"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:w-1/2 md:w-4/5 w-[90%] lg:h-[360px] sm:h-[300px] h-[210px] flex justify-center m-6 relative">
+                        <div
+                            class="border border-slate-100 w-full  dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center overflow-x-hidden portfolio-image after-effect">
+                            <img class="w-full shadow-lg saturate-[0.2] hover:saturate-[1]"
+                                src="./src/images/weather-app.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+                    <div
+                        class="lg:w-1/2 md:w-4/5 w-[90%] lg:h-[360px] sm:h-[300px] h-[210px] flex justify-center m-6 relative">
+                        <div
+                            class="border border-slate-100 w-full  dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center overflow-x-hidden portfolio-image after-effect">
+                            <img class="w-full shadow-lg saturate-[0.2] hover:saturate-[1]"
+                                src="./src/images/javascript-dom-projects.netlify.app_.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 md:w-4/5 w-[90%] space-y-4 flex flex-col  items-center lg:items-end">
+                        <p class="text-slate-600 dark:text-slate-200 font-medium text-2xl">Javascript DOM Applactions
+                        </p>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odit.
+                        </p>
+                        <ul class="flex space-x-6 working-skills">
+                            <li>Javascript</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <div class="space-x-4">
+                            <a class="btn-primary" href="javascript:;">View Project</a>
+                            <a href="javascript:;"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col-reverse lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+                    <div class="lg:w-1/2 md:w-4/5 w-[90%] space-y-4 flex flex-col  items-center lg:items-start">
+                        <p class="text-slate-600 dark:text-slate-200 font-medium text-2xl">Realtime Chat App</p>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odit.
+                        </p>
+                        <ul class="flex space-x-6 working-skills">
+                            <li>React </li>
+                            <li>Tailwind</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <div class="space-x-4">
+                            <a class="btn-primary" href="javascript:;">View Project</a>
+                            <a href="javascript:;"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:w-1/2 md:w-4/5 w-[90%] lg:h-[360px] sm:h-[300px] h-[210px] flex justify-center m-6 relative">
+                        <div
+                            class="border border-slate-100 w-full  dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center overflow-x-hidden portfolio-image after-effect">
+                            <img class="w-full shadow-lg saturate-[0.2] hover:saturate-[1]"
+                                src="./src/images/chat-app.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+                    <div
+                        class="lg:w-1/2 md:w-4/5 w-[90%] lg:h-[360px] sm:h-[300px] h-[210px] flex justify-center m-6 relative">
+                        <div
+                            class="border border-slate-100 w-full  dark:border-slate-600 bg-white dark:bg-primaryBg rounded flex flex-col items-center overflow-x-hidden portfolio-image after-effect">
+                            <img class="w-full shadow-lg saturate-[0.2] hover:saturate-[1]"
+                                src="./src/images/project-app-landing-page.netlify.app_.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 md:w-4/5 w-[90%] space-y-4 flex flex-col  items-center lg:items-end">
+                        <p class="text-slate-600 dark:text-slate-200 font-medium text-2xl">Project Name</p>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, odit.
+                        </p>
+                        <ul class="flex space-x-6 working-skills">
+                            <li>React</li>
+                            <li>Tailwind</li>
+                            <li>VS Code</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <div class="space-x-4">
+                            <a class="btn-primary" href="javascript:;">View Project</a>
+                            <a href="javascript:;"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
         <section class="container section" id="contact">
             <h3 class="heading-title">Contact</h3>
             <div>
-                <form action="#">
-                    <img src="./src/images/map-img.png" class="absolute top-0 left-0 -z-[1] h-full w-full opacity-50"
+                <form action="#" data-aos="fade-up">
+                    <img src="./src/images/map-img.png" class="absolute top-0 left-0 -z-[1] h-full w-full opacity-40"
                         alt="">
                     <div class="font-semibold text-3xl sm:text-5xl w-full text-center mb-4 sm:mb-12">Get in touch</div>
-                    <div class="grid grid-cols-2 gap-4 sm:gap-8">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="youremail@gmail.com" required>
-                        <textarea class="col-span-2" rows="5" placeholder="Message" required=""></textarea>
-                        <div class="col-span-2 text-center">
+                    <div class="grid grid-cols-2 gap-4 sm:gap-8" data-aos="fade-up">
+                        <input name="name" type="text" placeholder="Your Name" required>
+                        <input name="email" type="email" placeholder="your@email.com" required>
+                        <input name="subject" class="col-span-2" type="text" placeholder="Subject" required>
+                        <textarea name="message" class="col-span-2" rows="5" placeholder="Message"
+                            required=""></textarea>
+                        <div class="col-span-2 pb-8 sm:pb-12 text-center">
                             <button type="submit" class="btn-primary">Send</button>
                         </div>
 
@@ -239,11 +359,10 @@
         </section>
     </main>
 
-    <footer class="relative bg-gradient-to-b from-[#7a19f1] to-[#4026a8] h-[180px] flex items-center">
+    <footer class="relative bg-gradient-to-b from-[#7a19f1] to-[#4026a8] h-[120px] lg:h-[250px] flex items-center">
         <div class="container mx-auto p-2 bg-transparent sm:p-4 z-20">
             <div class="sm:flex sm:items-center sm:justify-between">
-                <a href="https://suzon-ahmmed.github.io/"
-                    class="flex items-center justify-center hover:border-none text-white">
+                <a href="#hero" class="flex items-center justify-center hover:border-none text-white">
                     <img src="./src/images/logo.svg" class="mr-1 h-8" alt="SA. Logo">
                     <span class="self-center text-xl -mt-[2px] font-bold">SA.</span>
                 </a>
@@ -252,16 +371,16 @@
                         class="text-xl text-white hover:text-facebook w-9 h-9 flex justify-center items-center rounded-full hover:bg-slate-100 hover:ease-in-out duration-500">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="javaxcript:;"
+                    <a href="https://www.linkedin.com/in/mdsuzon-10/"
                         class="text-xl text-white hover:text-linkedin w-9 h-9 flex justify-center items-center rounded-full hover:bg-slate-100 hover:ease-in-out duration-500">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="javaxcript:;"
+                    <a href="https://suzon-ahmmed.github.io/"
                         class="text-xl text-white hover:text-github w-9 h-9 flex justify-center items-center rounded-full hover:bg-slate-100 hover:ease-in-out duration-500">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="mailto:info.suzonahamed@gmail.com"
-                        class="text-xl text-white hover:text-[#de5245] w-9 h-9 flex justify-center items-center rounded-full hover:bg-slate-100 hover:ease-in-out duration-500">
+                        class="text-xl text-white hover:text-youtube w-9 h-9 flex justify-center items-center rounded-full hover:bg-slate-100 hover:ease-in-out duration-500">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
 
@@ -277,6 +396,7 @@
 
 
     <script src="./src/js/color.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.8.1/cdn.min.js" defer></script>
     <script src="./node_modules//flowbite/dist/flowbite.js"></script>
     <script src="./src/js/app.js"></script>

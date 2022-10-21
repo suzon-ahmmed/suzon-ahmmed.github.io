@@ -6,12 +6,11 @@ module.exports = {
       backgroundImage: {
         // heroAfter: "url('/src/images/hero-after.svg')",
         beforeImg: "url('/src/images/r-a.svg')",
-        formImg: "url('/src/images/map-img.png')",
       },
       colors: {
+        primaryBg: "#0a192f",
         //dark background for code block
         "primary-header": "#741ce8",
-        "heading-text": "#64ffda",
         //socil media icon
         github: "#171515",
         linkedin: "#1d66c2",

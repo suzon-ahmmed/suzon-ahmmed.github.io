@@ -13,6 +13,9 @@ const preloader = document.getElementById("preloader");
 
 // auto preloader using venilla js
 window.addEventListener("load", function () {
+  // setTimeout(function(){
+  //    preloader.style.display = 'none';
+  // },3000)
   preloader.style.display = "none";
 });
 
@@ -116,3 +119,15 @@ const scrollProgress = () => {
     percent: 0,
   };
 };
+
+/**
+ *ASO Scroll Anymation
+ *
+ * @param void
+ * @return void
+ */
+
+AOS.init({
+  delay: 100,
+  duration: 1200,
+});
