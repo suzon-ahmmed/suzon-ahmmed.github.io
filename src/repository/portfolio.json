@@ -11,7 +11,7 @@
         "projectName": "Realtime Chat App",
         "discription": "A realtime chat application, you can chat with your friend using this web app",
         "language": "React, Tailwind, Firebase",
-        "viewLink": "https://sa-react-chat.netlify.app/login",
+        "viewLink": "https://sa-react-chat.netlify.app",
         "githubLink": "https://github.com/suzon-ahmmed/react-chat-app",
         "image": "./src/images/chat-app.png"
     },
