@@ -610,6 +610,24 @@ input[type=file]::file-selector-button:hover {
   background: #374151;
 }
 
+.dark input[type=file]::-webkit-file-upload-button {
+  color: white;
+  background: #4B5563;
+}
+
+.dark input[type=file]::file-selector-button {
+  color: white;
+  background: #4B5563;
+}
+
+.dark input[type=file]::-webkit-file-upload-button:hover {
+  background: #6B7280;
+}
+
+.dark input[type=file]::file-selector-button:hover {
+  background: #6B7280;
+}
+
 input[type="range"]::-webkit-slider-thumb {
   height: 1.25rem;
   width: 1.25rem;
@@ -624,6 +642,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]:disabled::-webkit-slider-thumb {
   background: #9CA3AF;
+}
+
+.dark input[type="range"]:disabled::-webkit-slider-thumb {
+  background: #6B7280;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
@@ -650,6 +672,10 @@ input[type="range"]::-moz-range-thumb {
 
 input[type="range"]:disabled::-moz-range-thumb {
   background: #9CA3AF;
+}
+
+.dark input[type="range"]:disabled::-moz-range-thumb {
+  background: #6B7280;
 }
 
 input[type="range"]::-moz-range-progress {
@@ -692,9 +718,19 @@ input[type="range"]::-ms-fill-lower {
   border-color: #E5E7EB;
 }
 
+.dark [role="tooltip"] > [data-popper-arrow]:before {
+  border-style: solid;
+  border-color: #4B5563;
+}
+
 [role="tooltip"] > [data-popper-arrow]:after {
   border-style: solid;
   border-color: #E5E7EB;
+}
+
+.dark [role="tooltip"] > [data-popper-arrow]:after {
+  border-style: solid;
+  border-color: #4B5563;
 }
 
 [data-popover][role="tooltip"][data-popper-placement^='top'] > [data-popper-arrow]:before {
@@ -1199,12 +1235,12 @@ input[type="range"]::-ms-fill-lower {
 
 /* style for about section  */
 
-.working-skills li {
+.before-skill {
   position: relative;
   padding-left: 1.5rem;
 }
 
-.working-skills li::before {
+.before-skill::before {
   position: absolute;
   left: 0px;
   top: 0.25rem;
@@ -1421,8 +1457,8 @@ footer::before {
   left: 0px;
 }
 
-.bottom-4 {
-  bottom: 1rem;
+.bottom-2 {
+  bottom: 0.5rem;
 }
 
 .z-40 {
@@ -1505,6 +1541,10 @@ footer::before {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -2199,6 +2239,10 @@ section:first-child {
     top: 5rem;
   }
 
+  .sm\:bottom-4 {
+    bottom: 1rem;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -2437,6 +2481,14 @@ section:first-child {
 
   .lg\:items-end {
     align-items: flex-end;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-right {
+    text-align: right;
   }
 }
 

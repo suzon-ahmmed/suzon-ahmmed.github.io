@@ -1,26 +1,42 @@
 [
     {
-        "image": "./assets/images/portfolio/img-1.jpg",
-        "resource": "https://project-app-landing.netlify.app/"
+        "projectName": "Weather App",
+        "discription": "Get the live weather current temperature, hight temperature, loest temperature, sunrise and sunset time, wind speed, Humidity – all in one with Weather Live of any divison.",
+        "language": "React, Tailwind",
+        "viewLink": "https://sa-react-weather.netlify.app/",
+        "githubLink": "https://github.com/suzon-ahmmed/react-weather-app",
+        "image": "./src/images/weather-app.png"
     },
     {
-        "image": "./assets/images/portfolio/img-2.png",
-        "resource": "https://header-with-lamp.netlify.app/"
+        "projectName": "Realtime Chat App",
+        "discription": "A realtime chat application, you can chat with your friend using this web app",
+        "language": "React, Tailwind, Firebase",
+        "viewLink": "https://sa-react-chat.netlify.app/login",
+        "githubLink": "https://github.com/suzon-ahmmed/react-chat-app",
+        "image": "./src/images/chat-app.png"
     },
     {
-        "image": "./assets/images/portfolio/img-3.jpg",
-        "resource": "javascript:;"
+        "projectName": "Javascript DOM App",
+        "discription": "Differents type fo DOM app  using vanilla javascript ",
+        "language": "Javascript, Tailwind",
+        "viewLink": "https://javascript-dom-projects.netlify.app/",
+        "githubLink": "https://github.com/suzon-ahmmed/DOM",
+        "image": "./src/images/javascript-dom-projects.netlify.app_.png"
     },
     {
-        "image": "./assets/images/portfolio/img-4.png",
-        "resource": "javascript:;"
+        "projectName": "React Card",
+        "discription": "Simple card design using react and styled-components",
+        "language": "React, CSS3",
+        "viewLink": "https://simple-react-card.netlify.app/",
+        "githubLink": "https://github.com/suzon-ahmmed/simple-react-styled",
+        "image": "./src/images/simple-react-card.netlify.app_.png"
     },
     {
-        "image": "./assets/images/portfolio/img-5.jpg",
-        "resource": "javascript:;"
-    },
-    {
-        "image": "./assets/images/portfolio/img-6.jpg",
-        "resource": "javascript:;"
+        "projectName": "Landing Page",
+        "discription": "PSD to HTML",
+        "language": "HTML, CSS3",
+        "viewLink": "https://project-app-landing-page.netlify.app/",
+        "githubLink": "https://github.com/suzon-ahmmed/project-app-landing",
+        "image": "./src/images/project-app-landing-page.netlify.app_.png"
     }
 ]

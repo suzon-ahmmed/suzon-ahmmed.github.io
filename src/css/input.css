@@ -128,7 +128,7 @@ section {
   }
 
   /* style for about section  */
-  .working-skills li {
+  .before-skill {
     @apply pl-6 relative before:content-[""] before:bg-beforeImg before:w-4 before:h-4 before:scale-75 before:absolute before:left-0 before:top-1 before:text-primary-header;
   }
 
