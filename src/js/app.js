@@ -142,14 +142,14 @@ $(document).ready(function () {
             if (i % 2 == 0) {
               $("#allPortfolio").append(`
             <div 
-            class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col-reverse lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+            class="sticky top-[136px] mb-6 sm:mb-8 px-2 flex flex-col-reverse lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
             <div class="lg:w-1/2 md:w-4/5 w-[90%] space-y-4 flex flex-col  items-center lg:items-start">
                 <p class="text-slate-600 dark:text-slate-200 font-medium text-2xl">${response[i]["projectName"]}</p>
                 <p class="text-center lg:text-left">${response[i]["discription"]} </p>
                 <div class="before-skill">${response[i]["language"]}</div>
                 <div class="space-x-4">
-                    <a class="btn-primary" href="${response[i]["viewLink"]}">View Project</a>
-                    <a href="${response[i]["githubLink"]}"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                    <a class="btn-primary" target="_blank" href="${response[i]["viewLink"]}">View Project</a>
+                    <a target="_blank" href="${response[i]["githubLink"]}"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
                 </div>
             </div>
             <div
@@ -165,7 +165,7 @@ $(document).ready(function () {
             } else {
               $("#allPortfolio").append(`
               <div
-              class="sticky top-[136px] mb-6 sm:mb-8 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
+              class="sticky top-[136px] mb-6 sm:mb-8 px-2 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-primaryBg">
               <div
                   class="lg:w-1/2 md:w-4/5 w-[90%] lg:h-[360px] sm:h-[300px] h-[210px] flex justify-center m-6 relative">
                   <div
@@ -179,8 +179,8 @@ $(document).ready(function () {
                   <p class="text-center lg:text-right">${response[i]["discription"]}</p>
                   <div class="before-skill">${response[i]["language"]}</div>
                   <div class="space-x-4">
-                      <a class="btn-primary" href="${response[i]["viewLink"]}">View Project</a>
-                      <a href="${response[i]["githubLink"]}"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
+                      <a class="btn-primary" target="_blank" href="${response[i]["viewLink"]}">View Project</a>
+                      <a target="_blank" href="${response[i]["githubLink"]}"><i class="fa-brands fa-github text-2xl hover:scale-110"></i></a>
                   </div>
               </div>
           </div>
