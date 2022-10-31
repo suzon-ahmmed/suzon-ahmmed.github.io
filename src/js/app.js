@@ -132,6 +132,13 @@ AOS.init({
   duration: 1200,
 });
 
+/**
+ * Portfolio 
+ *
+ * @param void
+ * @return void
+ */
+
 $(document).ready(function () {
   const Protfolio = () => {
     $.ajax({
