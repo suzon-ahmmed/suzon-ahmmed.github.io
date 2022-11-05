@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html","./src/js/*.js"],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
         // heroAfter: "url('/src/images/hero-after.svg')",
         beforeImg: "url('/src/images/r-a.svg')",
+
       },
       colors: {
         primaryBg: "#0a192f",
@@ -35,5 +37,5 @@ module.exports = {
     },
   },
 
-  plugins: [require("flowbite/plugin")],
+  // plugins: [require("flowbite/plugin")],
 };
