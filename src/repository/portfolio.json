@@ -1,5 +1,13 @@
 [
     {
+        "projectName": "Youtube Clone",
+        "discription": "Fully functional youtube clone app using React js, Material UI and RapidAPI.",
+        "language": "React, Material UI, RapidAPI",
+        "viewLink": "https://sa-youtube.netlify.app/",
+        "githubLink": "https://github.com/suzon-ahmmed/youtube_clone",
+        "image": "./src/images/youtube-clone.png"
+    },
+    {
         "projectName": "Weather App",
         "discription": "Get the live weather current temperature, hight temperature, loest temperature, sunrise and sunset time, wind speed, Humidity – all in one with Weather Live of any divison.",
         "language": "React, Tailwind",
